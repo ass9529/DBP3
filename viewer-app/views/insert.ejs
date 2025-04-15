@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<h2>➕ Insert New Viewer</h2>
+
+<% if (message) { %>
+  <div style="padding: 10px; background-color: #e0f2fe; color: #0369a1; margin-bottom: 20px; border-radius: 6px;">
+    <%= message %>
+  </div>
+<% } %>
+
+
+<form action="/insert" method="POST">
+  <input name="ViewerId" placeholder="Viewer ID" required />
+  <input name="Name" placeholder="Name" required />
+  <input name="Sex" placeholder="Sex (M/F)" required />
+  <input name="MailId" placeholder="Email" required />
+  <input name="Age" placeholder="Age" required />
+  <input name="City" placeholder="City" required />
+  <input name="StateAb" placeholder="State Abbreviation" required />
+  <button type="submit">Insert Viewer</button>
+</form>
+
+<%- include('partials/footer') %>
+

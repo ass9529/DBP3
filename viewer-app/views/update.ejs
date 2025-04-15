@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<h2>✏️ Update Viewer Name</h2>
+
+<% if (message) { %>
+  <div style="padding: 10px; background-color: #e0f2fe; color: #0369a1; margin-bottom: 20px; border-radius: 6px;">
+    <%= message %>
+  </div>
+<% } %>
+
+
+<form action="/update" method="POST">
+  <input name="ViewerId" placeholder="Viewer ID to Update" required />
+  <input name="NewName" placeholder="New Name" required />
+  <button type="submit">Update Viewer</button>
+</form>
+
+<%- include('partials/footer') %>

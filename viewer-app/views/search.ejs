@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<h2>🔍 Search Viewer</h2>
+
+<% if (message) { %>
+  <div style="padding: 10px; background-color: #e0f2fe; color: #0369a1; margin-bottom: 20px; border-radius: 6px;">
+    <%= message %>
+  </div>
+<% } %>
+
+
+<form action="/search" method="POST">
+  <input type="text" name="query" placeholder="Enter Viewer ID or Name" required />
+  <button type="submit">Search</button>
+</form>
+
+<% if (results && results.length > 0) { %>
+  <h3>Search Results:</h3>
+  <ul>
+    <% results.forEach(viewer => { %>
+      <li><strong><%= viewer.Name %></strong> — ID: <%= viewer.ViewerId %> — Email: <%= viewer.MailId %></li>
+    <% }); %>
+  </ul>
+<% } else if (results) { %>
+  <p>No viewers found.</p>
+<% } %>
+
+<%- include('partials/footer') %>

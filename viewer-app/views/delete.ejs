@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<h2>❌ Delete Viewer</h2>
+
+<% if (message) { %>
+  <div style="padding: 10px; background-color: #e0f2fe; color: #0369a1; margin-bottom: 20px; border-radius: 6px;">
+    <%= message %>
+  </div>
+<% } %>
+
+
+<form action="/delete" method="POST">
+  <input name="query" placeholder="Viewer Name or ID" required />
+  <button type="submit">Delete Viewer</button>
+</form>
+
+<%- include('partials/footer') %>
