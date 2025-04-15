@@ -7,8 +7,8 @@ This app allows users to manage viewer records in a database — including searc
 
 ## 🎀 Authors:
 
-Tanmayee Siddineni - 1002053045
-Aparna Sobhirala - 1002059529
+- Tanmayee Siddineni - 1002053045
+- Aparna Sobhirala - 1002059529
 
 ---
 
@@ -42,7 +42,7 @@ cd DBP3
 In bash:
 npm install
 
-3.	Set up your .env file (create one if not present):
+3.	**Set Up the .emv file if not set up yet:**
 
 In bash:
 DB_HOST=localhost
@@ -50,13 +50,13 @@ DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
 DB_NAME=viewer_db
 
-4.	Start the server:
+4.	**Start the Server:**
 
 In bash:
 node server.js
 
 
-5.	Open in your browser:
+5.	**Open in your browser:**
 
 http://localhost:3000
 
@@ -64,7 +64,7 @@ http://localhost:3000
 
 ## 📍 Notes to consider
 
-•  Make sure MySQL is running and the viewer_db database with VIEWER table exists.
-•  Customize the styling in public/style.css as needed.
+- Make sure MySQL is running and the viewer_db database with VIEWER table exists.
+-  Customize the styling in public/style.css as needed.
 
 
